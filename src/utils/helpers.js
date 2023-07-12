@@ -2,7 +2,7 @@ export function formatCurrency(value) {
   return new Intl.NumberFormat("en", {
     style: "currency",
     currency: "INR",
-  }).format(value);
+  }).format(value * 10);
 }
 
 export function formatDate(dateStr) {
